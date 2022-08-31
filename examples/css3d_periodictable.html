@@ -89,6 +89,7 @@
 			<button id="sphere">SPHERE</button>
 			<button id="helix">HELIX</button>
 			<button id="grid">GRID</button>
+			<button id="cone">CONE</button>
 		</div>
 
 		<!-- Import maps polyfill -->
@@ -112,11 +113,11 @@
 			import { CSS3DRenderer, CSS3DObject } from './jsm/renderers/CSS3DRenderer.js';
 
 			const table = [
-				'H', 'Hydrogen', '1.00794', 1, 1,
-				'He', 'Helium', '4.002602', 18, 1,
-				'Li', 'Lithium', '6.941', 1, 2,
-				'Be', 'Beryllium', '9.012182', 2, 2,
-				'B', 'Boron', '10.811', 13, 2,
+				'H', 'Hadith', '23 M', 1, 1,
+				'He', 'Henry', '42 M', 18, 1,
+				'Li', 'Lithia', '61 F', 1, 2,
+				'Be', 'Benjamin', '92 M', 2, 2,
+				'B', 'Bron', '18 M', 13, 2,
 				'C', 'Carbon', '12.0107', 14, 2,
 				'N', 'Nitrogen', '14.0067', 15, 2,
 				'O', 'Oxygen', '15.9994', 16, 2,
@@ -383,6 +384,13 @@
 				buttonGrid.addEventListener( 'click', function () {
 
 					transform( targets.grid, 2000 );
+
+				} );
+				
+				const buttonGrid = document.getElementById( 'cone' );
+				buttonGrid.addEventListener( 'click', function () {
+
+					transform( targets.cone, 2000 );
 
 				} );
 
